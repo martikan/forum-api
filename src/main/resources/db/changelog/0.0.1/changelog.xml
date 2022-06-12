@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+        <include file="create_account_table.sql" relativeToChangelogFile="true"/>
+        <include file="create_idx_account_names.sql" relativeToChangelogFile="true"/>
+        <include file="create_role_table.sql" relativeToChangelogFile="true"/>
+        <include file="create_account_role_table.sql" relativeToChangelogFile="true"/>
+        <include file="create_post_table.sql" relativeToChangelogFile="true"/>
+
+        <!-- FOR TESTING -->
+        <include file="insert_mock_data_account.sql" relativeToChangelogFile="true"/>
+        <include file="insert_mock_data_post.sql" relativeToChangelogFile="true"/>
+
+</databaseChangeLog>
